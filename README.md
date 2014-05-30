@@ -23,7 +23,7 @@ std::cout << str_MY_ENUM(somevalue) << std::endl;
 Usage
 -----
 
-There are 2 parts to these macros - the DECLaration of the enum and string function, and the IMPLementation of the string function. When the enum is setup, there will be a function named `str_YOUR_ENUM(someval)` that will return the string equivalent of the enum value; there will also be an enum value NUM_YOUR_ENUM with the total number of enum values.
+There are 2 parts to these macros - the DECLaration of the enum and string function, and the IMPLementation of the string function. When the enum is setup, there will be a function named `str_YOUR_ENUM(someval)` that will return the string equivalent of the enum value; there will also be an enum value `NUM_YOUR_ENUM` with the total number of enum values.
 
 In your header file where you'd like to declare your enum:
 
