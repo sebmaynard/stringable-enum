@@ -12,8 +12,8 @@ TLDR;
 #define MY_ENUM(F) \
     F(MY_ENUM_A) \
     F(MY_ENUM_B)
-#STRINGABLE_ENUM_DECL(MY_ENUM)
-#STRINGABLE_ENUM_IMPL(MY_ENUM)
+STRINGABLE_ENUM_DECL(MY_ENUM)
+STRINGABLE_ENUM_IMPL(MY_ENUM)
 ...
 int number_of_enums = NUM_MY_ENUM;
 MY_ENUM somevalue = MY_ENUM_A;
@@ -34,7 +34,7 @@ In your header file where you'd like to declare your enum:
     F(MY_ENUM_A) \
     F(MY_ENUM_B)
 
-#STRINGABLE_ENUM_DECL(MY_ENUM)
+STRINGABLE_ENUM_DECL(MY_ENUM)
 ```
 
 Then in your .cpp file where you'd like to use it:
@@ -42,7 +42,7 @@ Then in your .cpp file where you'd like to use it:
 ```
 #include <string>
 
-#STRINGABLE_ENUM_IMPL(MY_ENUM)
+STRINGABLE_ENUM_IMPL(MY_ENUM)
 ```
 
 Then you can use it as a normal enum, and access the string versions easily:
