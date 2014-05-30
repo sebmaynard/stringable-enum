@@ -3,6 +3,22 @@ stringable-enum
 
 A set of macros to let you define enums in C++ that can be output as strings easily
 
+TLDR;
+-----
+
+```
+#include "stringable_enum.h" // this is the main header you need to include
+
+#define MY_ENUM(F) \
+    F(MY_ENUM_A) \
+    F(MY_ENUM_B)
+#STRINGABLE_ENUM_DECL(MY_ENUM)
+#STRINGABLE_ENUM_IMPL(MY_ENUM)
+...
+MY_ENUM somevalue = MY_ENUM_A;
+std::cout << str_MY_ENUM(somevalue) << std::endl;
+```
+
 Usage
 -----
 
