@@ -40,3 +40,9 @@ Sample
 
 sample.cpp and sample.h are included as an example of how it can be used; running `make` should compile the sample.
 
+```
+$ make
+$ ./stringable_enum_sample
+0: MY_SAMPLE_ENUM_WAITING
+1: MY_SAMPLE_ENUM_ACTIVE
+```
